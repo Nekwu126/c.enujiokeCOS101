@@ -4,7 +4,7 @@ fn main() {
 	let t:f64 = 5.0;
 
 	// simple interest
-	let a = p * (1.0 + (r / 100.0)) * t;
+	let a = p * (1.0 + (r / 100.0)) powf(t);
 	println!("Amount is {}", a);
 	let cl = a - p;
 	println!("Simple Interest is {}", cl);
