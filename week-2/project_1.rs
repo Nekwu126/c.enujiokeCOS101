@@ -5,8 +5,8 @@ fn main() {
 
 	// simple interest
 	let a = p * (1.0 + (r / 100.0)) * t;
-	println!("Amount is {}, a);
-	let Cl = a - p;
-	println!("Simple Interest is {}", Cl);
+	println!("Amount is {}", a);
+	let cl = a - p;
+	println!("Simple Interest is {}", cl);
 
 }
