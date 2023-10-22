@@ -11,7 +11,7 @@ fn main() {
 	println!("The sum is {}", s);
 	
 	//average
-	let av = (t + m + h + d + a) / to;
+	let av = s / to;
 	println!("The average is {}", av);
 	
 	/* t = Toshiba
