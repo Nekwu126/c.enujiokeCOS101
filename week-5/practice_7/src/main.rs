@@ -7,7 +7,7 @@ fn main() {
     io::stdin().read_line(&mut input1).expect("Failed to read input");
     let mut num:i32 = input1.trim().parse().expect("Failed to input");
 
-    while num < 10 {
+    while num < 6 {
         println!("inside loop number value is {}", num);
         num+=1;
     }
