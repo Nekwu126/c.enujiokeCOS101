@@ -9,6 +9,9 @@ let mut waec_status = String::new();
     
     println!("Enter the first name: ");
     io::stdin().read_line(&mut name).expect("Not a valid number");
+    
+    println!("Do you have siblings? ");
+    let 
 
     
     println!("{}, Enter your age: ", name);
@@ -23,5 +26,8 @@ let mut waec_status = String::new();
         println!("You are not eligible for this program");
         return;
 }
+  println!("How many siblings do you have: ");
+  io::stdin().read_line(&mut siblings).expect("Not a valid number");
+  let mut siblings:i64 = siblings.trim().parse().expect("Not a ")
 }
 
