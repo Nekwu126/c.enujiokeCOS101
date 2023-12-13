@@ -58,7 +58,8 @@ fn cube() {
     io::stdin().read_line(&mut length).expect("Not a valid number");
     let length:f64 = lenght.trim().parse().expect("Not a valid input");
 
-    let area_cube:f64 = length * length
+    let area_cube:f64 = length * length;
+    println!("")
 }
 
 }
