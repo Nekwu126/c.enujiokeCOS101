@@ -8,5 +8,9 @@ fn main() {
    //here two variables owns heap value,
    //two pointers to the same content is not allowed in rust
 
-   //Rust is very smart
+   //Rust is very smart in terms of memory access, so it detects a race condition
+   //as two variables point to same heap
+
+   println!("{:?}", v);
+   
 }
