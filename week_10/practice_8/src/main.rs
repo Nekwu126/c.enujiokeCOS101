@@ -8,13 +8,13 @@ struct Employee {
 fn main() {
     //initialize a structure
     let emp1 = Employee {
-        company: String::from("Mocrosoft Corporation"),
-        ceo: String::from("Satya Nadella"),
+        company: String::from("Microsoft Corporation"),
+        ceo: String::new(),
         age: 56,
     };
     let emp2 = Employee {
         company: String::from("Google Inc."),
-        ceo: String::from("Sundai Pichai"),
+        ceo: String::new(),
         age: 51,
     };
     //pass emp1 and emp2 to display()
@@ -24,10 +24,15 @@ fn main() {
 //fetch values of specific structure fields using the
 //operator and print it to the console
 fn display(emp: Employee) {
-    println!(
-        "Name is :{} 
-              company is {} 
-              age is {}",
-        emp.ceo, emp.company, emp.age
-    );
+    println!("Who is your ceo: ");
+    std::io::stdin().read_line(&mut emp.ceo).expect("Failed to read input");
+    if emp.ceo = "Satya" {
+        println!("name is {}, age is {}, company is {}", emp.ceo, emp.age, emp.company);
+
+    }
+    else if emp.ceo = "Bob" {
+        println!("name is {}, age is {}, company is {}", emp.ceo, emp.age, emp.company);
+    }
+    
+    
 }

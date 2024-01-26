@@ -1,5 +1,5 @@
 //define the prices of each laptop brand
-struct laptop {
+struct Laptop {
     hp:u32,
     ibm:u32,
     toshiba:u32,
@@ -8,7 +8,7 @@ struct laptop {
 
 //logic to calculate the total prices of the laptops
 //if the customer purchases three of each
-impl laptop {
+impl Laptop {
     fn prices(&self)->u32 {
         self.hp + self.ibm + self.toshiba + self.dell
     }
@@ -16,7 +16,7 @@ impl laptop {
 
 fn main() {
     //instantiate a structure
-    let laptop1 = laptop {
+    let laptop1 = Laptop {
         hp:650000 * 3,
         ibm:755000 * 3,    
         toshiba:550000 * 3, 

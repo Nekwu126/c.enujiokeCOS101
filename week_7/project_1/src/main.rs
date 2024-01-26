@@ -50,6 +50,7 @@ fn parallelogram() {
 
     let para_area:f64 = base * altitude;
     println!("The area of the rhombus is {}", para_area);
+}
 
 fn cube() {
     let length = String::new();
@@ -59,7 +60,31 @@ fn cube() {
     let length:f64 = lenght.trim().parse().expect("Not a valid input");
 
     let area_cube:f64 = length * length;
-    println!("")
-}
+    println!("The area for the cube is {} ", area_cube);
 
 }
+
+fn cylinder() {
+    let height = String::new();
+    let radius = String::new();
+
+    println!("Enter the value for the height: ");
+    io::stdin().read_line(&mut height).expect("Not a valid number");
+    let height:f64 = base.trim().parse().expect("Not a valid number");
+
+    println!("Enter the value for the radius: ");
+    io::stdin().read_line(&mut radius).expect("Not a valid number");
+    let radius:f64 = base.trim().parse().expect("Not a valid input");
+
+    let area_cylinder:f64 = 3.142 * radius * radius * height;
+    println!("The area for the cylinder is {}", area_cylinder);
+
+
+}
+fn main() {
+    
+
+
+}
+
+

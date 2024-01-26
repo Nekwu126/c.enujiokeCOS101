@@ -1,0 +1,10 @@
+Company                                 Company assets                            Company               Company leverages
+                                                                                  liabilities                                   
+Cadbury Nigeria Plc (1965)              15,000,000                                5,500,000             63.33
+Champion Breweries Plc (1974)           25,000,000                                8,000,000             68.00
+Dangote Sugar Refinery (1970)           18,000,000                                10,000,000            44.44
+Flour Mills Nigeria Plc (1960)          32,000,000                                4,000,000             87.50
+Nestle Nigeria Plc (1961)               8,000,000                                 1,500,000             81.25
+Unilever Nigeria Plc (1923)             37,000,000                                11,000,000            70.27
+Honeywell Nigeria Plc (1906)            34,000,000                                9,000,000             73.53 
+Nigerian Breweries Plc (1946)           30,000,000                                12,000,000            60.00

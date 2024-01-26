@@ -1,0 +1,8 @@
+Leverages
+                    Cadbury = 63
+                    Champion = 68
+                    Dangote = 44
+                    Flour = 88
+                    Nestle = 81
+                    Unilever = 74
+                    Nigerian Breweries = 60Company leverages

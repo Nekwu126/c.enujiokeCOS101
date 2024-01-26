@@ -1,0 +1,124 @@
+use std::io;
+
+
+
+fn main() {
+    let mut input1 = String::new();
+let mut input2 = String::new();
+let mut input3 = String::new();
+let mut input4 = String::new();
+let mut input5 = String::new();
+let mut input6 = String::new();
+let mut input7 = String::new();
+let mut input8 = String::new();
+
+let al = "Alzheimer";
+let ar = "Arrhythmia";
+let ckd = "Chronic kidney disease";
+let d = "Diabetes";
+let art = "Arthritis";
+
+let a = "Akpabom";
+let n = "Ngbauji";
+let at = "Atabrikang";
+let o = "Okorobilom";
+let e = "Emeremen";
+
+
+println!(
+    "Health diagnosis       Amount       Village       Discount
+     Altzheimer             1200000      Akpabom       20%
+     Arrhythmia             550000       Ngbauji       5%
+     Chronic Kidney Disease 1500000      Atabrikang    15%
+     Diabetes               800000       Okorobilom    10%
+     Arthritis              450000       Emeremen      10%");
+loop{
+
+
+println!("Enter your name");
+io::stdin().read_line(&mut input1).expect("Not a valid string");
+
+println!("Enter your date of birth");
+io::stdin().read_line(&mut input2).expect("Not a valid string");
+
+println!("Enter your age: (Please use underscores to separate the month, day and year)");
+io::stdin().read_line(&mut input3).expect("Not a valid string");
+let age:i32 = input3.trim().parse().expect("Not a valid integer");
+
+println!("enter your phone number");
+io::stdin().read_line(&mut input4).expect("Not a valid string");
+let phone_number:i64 = input4.trim().parse().expect("Not a valid integer");
+
+println!("Enter your number of siblings");
+io::stdin().read_line(&mut input5).expect("Not a valid string");
+let siblings:i32 = input5.trim().parse().expect("Not a valid integer");
+
+println!("Enter your number of children: ");
+io::stdin().read_line(&mut input6).expect("Not a valid string");
+let children:i32 = input6.trim().parse().expect("Not a valid integer");
+
+println!("Enter your diagnosis: ");
+io::stdin().read_line(&mut input7).expect("Not a valid string");
+
+println!("Your village of residence: ");
+io::stdin().read_line(&mut input8).expect("Not a valid string");
+
+
+//the conditions
+
+if al || "Alzheimer" && children > 4 && a || "Akpabom":bool = true && age > 50{
+    let amount:f64 = 1200000.0;
+    let calc:f64 = 0.8 * amount;
+    println!("You are eligible for a discount so your balance is {} ", calc);
+}
+else if al && children > 4 && age < 50{
+    println!("Your price is {}", amount);
+
+}
+
+if ar || "Arrhythmia" && siblings > 4 && n || "Ngbauji":bool = true && age == 30{
+    let amount1:f64 = 550000.0;
+    let calc1:f64 = 0.95 * 550000.0;
+    println!("You are eligible for a discount, so the total amount is {}", calc1 );
+
+} 
+else if al || "Arrhythmia":bool = true && siblings < 4{
+    println!("Your total amount is {}", calc1);
+}
+
+if ckd || "Chronic Kidney Disease":bool = true && age < 40 && children < 3 && siblings < 3  && at || " Atabrikang":bool = true{
+    let amount3:f64 = 1500000.0;
+    let calc2:f64 = 0.85 * amount3;
+    println!("You are eligible for a discount so your total amount is {}", calc2);
+
+}
+else if ckd || "Chronic Kidney Disease" && age > 40 && children > 3 && siblings > 3 {
+    println!("Your total amont is {} ", amount3);
+}
+if d || "Diabetes" && age > 28 && age < 45 && children > 2 && children < 4 && o || "Okorobilom":bool = true{
+    let amount4:f64 = 800000.0;
+    let calc4:f64 = amount4 * 0.90;
+    println!("You are eligible for a discount, so your total amount is {}", calc4);
+
+}
+else if d || "Diabetes" && age < 28 && age > 45 && children < 4{
+    println!("Your total amount is {}", amount4);
+}
+if a || "Arthritis" && age > 58 && siblings > 5 && children > 5 && e || "Emeremen":bool = true{
+    let amount5:f64 = 450000.0;
+    let calc5:f64 = amount5 * 0.90;
+    println!("You are eligible for a discount so your total amount is {}", calc5);
+}
+else if a || "Arthritis" && age < 45 && siblings < 5 && children < 5 {
+    println!("Your total amount is {}", amount5);
+}
+}
+
+
+
+
+
+
+
+
+}
